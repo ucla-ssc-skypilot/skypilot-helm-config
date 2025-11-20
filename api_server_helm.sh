@@ -23,7 +23,7 @@ helm upgrade --install skypilot skypilot/skypilot-nightly --devel \
   --set ingress-nginx.controller.service.nodePorts.http=30050 \
   --set ingress-nginx.controller.service.nodePorts.https=30051 \
   --set-file apiService.sshNodePools=/xxx/ssh_node_pools.yaml \
-  --set apiService.sshKeySecret=apiserver-ssh-key
+  --set apiService.sshKeySecret=apiserver-ssh-key \
   --set apiService.metrics.enabled=true \
   --set prometheus.enabled=true \
   --set grafana.enabled=true
